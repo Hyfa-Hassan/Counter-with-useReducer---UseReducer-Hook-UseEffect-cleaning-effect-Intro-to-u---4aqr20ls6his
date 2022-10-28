@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import { counterReducer } from '../reducers/counterReducer';
 import '../styles/App.css';
+const initialState = { count: 0 };
 const App = () => {
 const [state,dispatch] = useReducer(counterReducer,initialState)
   return (
