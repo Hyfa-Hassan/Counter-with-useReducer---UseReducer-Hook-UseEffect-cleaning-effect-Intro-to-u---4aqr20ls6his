@@ -11,15 +11,4 @@ const counterReducer = (state,action) =>{
   }
 }
 
-function Counter() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <>
-      <span id="counter">{state.count}</span>
-      <button id="increment-btn" onClick={() => dispatch({ type: "increment" })}>+</button>
-      <button id="decrement-btn" onClick={() => dispatch({ type: "decrement" })}>-</button>
-    </>
-  );
-}
-
-export {counterReducer, Counter}
+export {counterReducer}
